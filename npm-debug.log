@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/evCapitan/.nvm/versions/node/v7.2.1/bin/node',
+1 verbose cli   '/Users/evCapitan/.nvm/versions/node/v7.2.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@4.0.5
+3 info using node@v7.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/evCapitan/DEV/nodeschool/how-to-npm',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/evCapitan/.npm/@ev-npm/how-to-npm/1.0.3/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/evCapitan/.npm correctMkdir not in flight; initializing
+10 info lifecycle @ev-npm/how-to-npm@1.0.3~prepublish: @ev-npm/how-to-npm@1.0.3
+11 silly lifecycle @ev-npm/how-to-npm@1.0.3~prepublish: no script for prepublish, continuing
+12 info lifecycle @ev-npm/how-to-npm@1.0.3~prepare: @ev-npm/how-to-npm@1.0.3
+13 silly lifecycle @ev-npm/how-to-npm@1.0.3~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/evCapitan/.npm/@ev-npm/how-to-npm/1.0.3/package.tgz',
+14 verbose tar pack   '/Users/evCapitan/DEV/nodeschool/how-to-npm' ]
+15 verbose tarball /Users/evCapitan/.npm/@ev-npm/how-to-npm/1.0.3/package.tgz
+16 verbose folder /Users/evCapitan/DEV/nodeschool/how-to-npm
+17 verbose addLocalTarball adding from inside cache /Users/evCapitan/.npm/@ev-npm/how-to-npm/1.0.3/package.tgz
+18 verbose correctMkdir /Users/evCapitan/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd @ev-npm/how-to-npm@1.0.3
+20 verbose afterAdd /Users/evCapitan/.npm/@ev-npm/how-to-npm/1.0.3/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/evCapitan/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/evCapitan/.npm/@ev-npm/how-to-npm/1.0.3/package/package.json written
+23 silly publish { name: '@ev-npm/how-to-npm',
+23 silly publish   version: '1.0.3',
+23 silly publish   description: '#Here is all the necessary information for this package.',
+23 silly publish   main: 'index.js',
+23 silly publish   scripts: { test: 'node test.js' },
+23 silly publish   author: '',
+23 silly publish   repository:
+23 silly publish    { type: 'git',
+23 silly publish      url: 'git+https://github.com/Visual-Knowledge/how-to-npm.git' },
+23 silly publish   license: 'ISC',
+23 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+23 silly publish   readme: '#This is a documentation file \n\n#Here is all the necessary information for this package.\n\n#This is only a test file!\n',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   gitHead: '6fb051d12e238c8f82d76e8377d35c594b3d7d2c',
+23 silly publish   bugs: { url: 'https://github.com/Visual-Knowledge/how-to-npm/issues' },
+23 silly publish   homepage: 'https://github.com/Visual-Knowledge/how-to-npm#readme',
+23 silly publish   _id: '@ev-npm/how-to-npm@1.0.3',
+23 silly publish   _shasum: 'df2369f0f0f71eea6cb3b4f34b12a67544e93690',
+23 silly publish   _from: '.' }
+24 info lifecycle @ev-npm/how-to-npm@1.0.3~prepublishOnly: @ev-npm/how-to-npm@1.0.3
+25 silly lifecycle @ev-npm/how-to-npm@1.0.3~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name @ev-npm/how-to-npm
+28 silly mapToRegistry scope (from package name) @ev-npm
+29 verbose mapToRegistry no registry URL found in name for scope @ev-npm
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry http://localhost:15443/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: '@ev-npm/how-to-npm',
+32 silly mapToRegistry   scope: '@ev-npm',
+32 silly mapToRegistry   escapedName: '@ev-npm%2fhow-to-npm',
+32 silly mapToRegistry   name: '@ev-npm/how-to-npm',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri http://localhost:15443/@ev-npm%2fhow-to-npm
+34 verbose publish registryBase http://localhost:15443/
+35 silly publish uploading /Users/evCapitan/.npm/@ev-npm/how-to-npm/1.0.3/package.tgz
+36 verbose stack Error: auth required for publishing
+36 verbose stack     at CachingRegistryClient.publish (/Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+36 verbose stack     at /Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/lib/publish.js:137:14
+36 verbose stack     at mapToRegistry (/Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+36 verbose stack     at publish_ (/Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/lib/publish.js:108:3)
+36 verbose stack     at Array.<anonymous> (/Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+36 verbose stack     at LOOP (/Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+36 verbose stack     at /Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+36 verbose stack     at done (/Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/lib/utils/lifecycle.js:132:5)
+36 verbose stack     at LOOP (/Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:7:26)
+36 verbose stack     at /Users/evCapitan/.nvm/versions/node/v7.2.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+37 verbose cwd /Users/evCapitan/DEV/nodeschool/how-to-npm
+38 error Darwin 15.6.0
+39 error argv "/Users/evCapitan/.nvm/versions/node/v7.2.1/bin/node" "/Users/evCapitan/.nvm/versions/node/v7.2.1/bin/npm" "publish"
+40 error node v7.2.1
+41 error npm  v4.0.5
+42 error code ENEEDAUTH
+43 error need auth auth required for publishing
+44 error need auth You need to authorize this machine using `npm adduser`
+45 verbose exit [ 1, true ]
